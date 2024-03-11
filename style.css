@@ -1,0 +1,304 @@
+body{
+
+  font-family: "Montserrat", sans-serif;
+
+}
+
+
+header{
+    background-color: #BBBBBB;
+    padding: 20px 0; /*Esta propiedad sirve para desplazamiento externo*/
+}
+
+.contenido-contatos{
+    width: 1080px;
+    margin: 0 auto;
+}
+.caja{
+    width: 1080px;
+    position: relative;
+    margin: 0 auto;
+}
+nav{
+    position: absolute;
+    top:110px;
+    right:0px;
+    
+}
+
+nav li{
+    display: inline; /*Esta propiedad (inline) no dice que ocupa el tamaño que contiene este elemento */
+    margin: 0 0 0 15px; /* ponemos margenes (Arriba - derecha - Abajo - Izquierda)*/
+}
+
+nav a{
+    text-transform: uppercase;/*esta porpiedad (uppercase)sirve Para poner nuestro texto en mayuscula*/
+    color: black;
+    font-weight: bold;/*con la propiedad (font-weight) ponermos el texto bold o otro formato*/
+    font-size: 22px;
+    text-decoration: none;
+
+}
+
+nav a:hover{
+    color: #e09915;
+    text-decoration: underline;
+}
+.productos{
+    width: 1080px;
+    margin: 0 auto;
+    padding: 50px;
+}
+.productos li{
+    display: inline-block; /*La propiedad inline-block nos permite ajustar el contenido dejandolo regulable el objeto*/
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1%;
+    padding: 30px 20px;
+    box-sizing:border-box;/*Tamaño de la caja - el borde de cada uno de los items sera el limite del espacio que va ser definido - no sobrepasan el valor del ancho*/
+    border: 2px solid #000000;
+    border-radius: 10px;
+    
+}
+
+.productos li:hover{
+    border-color: #e09915;
+}
+.productos li:active{
+    border-color:darkgreen;
+}
+
+.productos h2{
+    font-size: 25px;
+    font-weight: bold;
+
+}
+.productos li:hover h2{
+   font-size: 30px;
+}
+
+.productoDescri{
+    font-size: 18px;
+}
+.productoPrecio{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+form{
+    margin: 40px 0;
+}
+
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.input-padrom{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.checkbox{
+    margin: 20px 0;
+}
+
+
+footer{
+    text-align: center;
+    background-image: url(img/bg.jpg);
+    padding: 40px;
+}
+
+.pieDePagina{
+    color: #ffffff;
+    font-size: 12px;
+    margin: 20px;
+}
+
+.enviar{
+    width: 40%;
+    padding: 15px 0 ;/**Espaciamiento interno*/
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: #e09915;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all ;/*Esta propiedad le da una animación al hover cuando pasamos el mouse*/
+    cursor: pointer;/*Esta propiedad cambia el cursos por la amno apuntando*/
+
+}
+
+.enviar:hover{
+    background-color: #c27e00;
+    transform: scale(1.2); /* rotate(10deg); esta propiedad nos permite girar los elementos en grados (deg)*/ 
+}
+
+table{
+    margin: 40px 40px;/**Espaciamiento exterior*/
+}
+
+thead{
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+td, th{
+    border: 1px solid #000000;
+    padding: 8px 15px;
+}
+
+/*Aquí inicia el css para nuestra pagina inicial*/
+
+.bannerPrincipal {
+    width: 100%;
+}
+
+.principal{
+    padding: 3em 0;
+    background: #ffffff;
+    width: 1080px;
+    margin: 0 auto;
+}
+
+.titulo-principal{
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0 0 1em;
+    clear: left;
+    /*color: rgba(218,0,0,0.3); De esta manera tambien podemos agregar opacioada a los elementos*/
+    /*text-shadow: 2px 2px 5px rgba(80, 80, 80, 0.5);*/
+}
+/*:first-letter -> Nos permite modificar el primer elemento de un texto
+.titulo-principal:first-letter{
+    font-size: 50px;
+}
+.titulo-principal:before{
+    content: "[";
+}
+.titulo-principal:after{
+    content: "]";
+}
+p:first-line{
+    font-style: italic;
+}
+*/
+.principal p{
+    margin: 0 0 1em;
+}
+
+.principal strong{
+    font-weight: bold;
+}
+
+.principal em{
+    font-style: italic;
+}
+
+.utensilios{
+    width: 120px;
+    float:left; /*Esta porpiedad Float nos permite Colocar el elemento en la lateral de nuestra página y dejar los otros elementos alrededor de él.*/
+    margin: 0 20px 20px 0 ;   
+}
+.diferenciales{
+    padding: 3em 0;
+    background: linear-gradient( orange, orange );
+    /*background: #888888;*/
+    /*box-shadow: inset 0 0 30px red; De esta manera ponemos sombra interna a los elementos*/
+}
+/*linear-gradient( 45deg, orange 50%,blue, red, black ); -> permite poner degradados  y el "deg" es la orientación del degradado como el valor en porcentaje es el valor que va a ocupar el color dentro del degradado, tmabine lo podemo hacer con la porpiedad radial-gradient(); yu se configura igual.*/
+.mapa{
+    padding: 3em 0;
+    background: linear-gradient( white, orange );
+}
+
+.mapa p{
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.mapa-contenido{
+    width: 1080px;
+    margin: 0 auto;
+}
+
+.contenido-diferenciales{
+    width: 640px;
+    margin: 0 auto;
+}
+.lista-diferenciales{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.items{
+    line-height: 1.5;
+}
+.items:before{
+    content: "★";
+}
+/*first-child -> es para el primer elemento*/
+/*last-child -> es para el ultimo elemento*/
+/*nth-child(3) -> es para el numero del elemento que pongamos*/
+.items:first-child{
+    font-weight: bold;
+}
+
+.imagen-diferenciales{
+    width: 60%;
+    transition: 400ms;
+    box-shadow: 10px /*Derecha-cuando es positivo*/ 10px /*Arriba-cuando es positivo*/ 30px /*Difuminación*/ 10px /*Expación de la sombra*/  #000000 /*Color*/ ;
+}
+.imagen-diferenciales:hover{
+    opacity: 0.3;
+}
+
+.video{
+    padding: 3em 0;
+    width: 560px;
+    margin: 1em auto;
+}
+
+@media screen and (max-width:480px){
+
+    h1{
+        text-align: center;
+    }
+
+    nav{
+        position: static;
+    }
+
+    .principal p, .utensilios{
+        margin: 0 30px;
+        padding: 1em 0 0;
+    }
+
+    .mapa p{
+        padding: 0 15px;
+    }
+
+    .caja, .principal, .mapa-contenido, .contenido-diferenciales, .video{
+        width: auto;
+    }
+
+    .lista-diferenciales, .imagen-diferenciales{
+        width: 100%;
+    }
+
+
+
+}
+
+

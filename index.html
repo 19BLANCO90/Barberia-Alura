@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Barbería Alura</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+
+            <header>
+                <div class="caja"><!--Div es una etiqueta para crear bloques-->
+                    <h1><img src="img/logo.png" alt="Logo de la barberia Alura"></h1>
+                    <nav><!--Esta etiqueta (nav) nos srive para crear nuestro menu-->
+                        <ul>
+                            <li ><a href="index.html">Inicio</a></li>
+                            <li><a href="productos.html">Productos</a></li>
+                            <li><a href="contacto.html">Contacto</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+       
+        <img class="bannerPrincipal" src="banner/banner.jpg"> <!--Los ID son unicos y nos permite utilizarlo solo una vez-->
+
+        <main>
+
+            <section class="principal">
+            
+                <!--Las etiquetas <h> son para poner titulos y subtitulos y tiene diferentes números-->
+                <h2 class="titulo-principal">Sobre la Barbería Alura</h2>
+
+                <img class="utensilios" src="img/utensilios.jpg" alt="utensilios de un barbero">
+        
+                <!--La etiqueta strong sirve para poner el texto en (bold)-->
+                <p> En el corazón de la ciudad, la <strong class="">Barbería Alura</strong> trae para el mercado lo que hay de mejor para su cabello y barba. Fundada en 2020, la Barbería Alura ya es destaque en la ciudad y conquista nuevos clientes diariamente. </p> 
+        
+                <!--la etiqueta em sirve para hacer enfacis en el texto (italic)-->
+                <p id="mision"><em>Nuestra misión es: <strong>"Proporcionar autoestima y calidad de vida a nuestros clientes".</strong></em></p> 
+        
+                <p>profesionales experimentados que están constantemente observando los cambios y movimiento en el mundo de la moda, para así ofrecer a nuestros clientes las últimas tendencias. El atendimiento posee un padrón de excelencia y agilidad, garantizando calidad y satisfacción de nuestros clientes.</p> 
+        
+            </section>
+
+            <section class="mapa">
+                <h3 class="titulo-principal">Nuestra Ubicación</h3>
+                <p>
+                    Nuestro establecimiento esta ubicado en el corazón de la ciudad
+                </p>
+                <div class="mapa-contenido">
+
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.1034488245787!2d-75.56864808867942!3d6.250097726252411!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4428f8f2445779%3A0xf6880fca3fd3b4a6!2sEdificio%20Coltejer!5e0!3m2!1ses-419!2sco!4v1709771654873!5m2!1ses-419!2sco" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><!--el iframe es una propiedad para poner contenido externo-->
+
+
+                </div>
+                
+            </section>
+                
+            <section class="diferenciales"> <!--Las clases nos permiten reutilizar los estilos-->
+        
+                    <h3 class="titulo-principal">Diferenciales</h3>
+
+                    <div class="contenido-diferenciales">
+                    <!--<ol></ol> Lista ordenada-->
+                    <ul class="lista-diferenciales"><!--Lista no ordenada-->
+                        <!-- <li></li> Lista-->
+                        <li class="items">Atención personalizada a los clientes</li>
+                        <li class="items">Espacio diferenciado</li>
+                        <li class="items">ELocalización</li>
+                        <li class="items">Profesionales especializados</li>
+                        <li class="items">Puntualidad</li>
+                        <li class="items">Limpieza</li>
+                    </ul><img src="img/diferenciales.jpg" alt="" class="imagen-diferenciales">
+                    </div>
+
+                    <div class="video">
+
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/wcVVXUV0YUY?si=dW2x-wyZdK9zPRSW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        
+                    </div>
+                       
+            </section>
+
+
+        </main>
+        
+        <footer>
+            <img src="img/logo-blanco.png" alt="Logo de la barberia Alura">
+            <p class="pieDePagina">&copy Copyrigth Barberia Alura - 2024</p>
+        </footer>
+    
+    </body>
+</html>

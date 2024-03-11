@@ -1,0 +1,115 @@
+
+/* de esta manera se comenta*/
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header{
+    background-color: #BBBBBB;
+    padding: 20px 0; /*Esta propiedad sirve para desplazamiento externo*/
+    margin-bottom: 2px;
+}
+
+.caja2{
+    width: 1080px;
+    position: relative;
+    margin: 0 auto;
+}
+
+nav{
+    
+    position: absolute;
+    top:110px;
+    right:0px;
+    
+}
+
+nav li{
+    display: inline; /*Esta propiedad (inline) no dice que ocupa el tamaño que contiene este elemento */
+    margin: 0 0 0 15px; /* ponemos margenes (Arriba - derecha - Abajo - Izquierda)*/
+}
+
+nav a{
+    text-transform: uppercase;/*esta porpiedad (uppercase)sirve Para poner nuestro texto en mayuscula*/
+    color: black;
+    font-weight: bold;/*con la propiedad (font-weight) ponermos el texto bold o otro formato*/
+    font-size: 22px;
+    text-decoration: none;
+
+}
+
+nav a:hover{
+    color: #e09915;
+    text-decoration: underline;
+}
+
+nav ul{
+    width: 100%;
+}
+
+/*.menuInicial{
+    width: 100%;
+}*/
+
+.tituloPrincipal{
+    padding-left: 30px;
+}
+
+.principal{
+    background: #cccccc;
+    padding: 20px;
+}
+
+.tituloCentro{
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+p{
+    text-align: center;
+}
+
+em strong{
+    color: red;
+}
+
+#mision{
+    font-size: 20px;
+}
+
+.diferenciales{
+    background: #ffffff;
+    padding: 30px;
+}
+
+.items{
+    font-style: italic;
+}
+
+ul{
+    display: inline-block; /*Esta propiedad le dice al elemeneto que ocupe solo el espacio de su contendio*/
+    vertical-align: top;
+    width: 20%;
+    margin-right: 15%;
+    margin-top:10%;
+}
+
+.imagenDiferenciales{
+    width: 50%;
+}
+
+footer{
+    text-align: center;
+    background-image: url(_img/bg.jpg);
+    padding: 40px;
+}
+
+.pieDePagina{
+    color: #ffffff;
+    font-size: 12px;
+    margin: 20px;
+}
+
+
